@@ -45,6 +45,9 @@
 <p align="center">
 AstroNvim is an aesthetic and feature-rich neovim config that is extensible and easy to use with a great set of plugins
 </p>
+<p align="center">
+Support AstroNvim by contributing to <a href="https://github.com/astronvim/astronvim">this</a> repository.
+</p>
 
 ## 🌟 Preview
 
