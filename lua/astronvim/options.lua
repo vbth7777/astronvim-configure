@@ -7,7 +7,7 @@ end
 local options = astronvim.user_opts("options", {
   opt = {
     breakindent = true, -- Wrap indent to match  line start
-    clipboard = "unnamedplus", -- Connection to the system clipboard
+    -- clipboard = "unnamedplus", -- Connection to the system clipboard
     cmdheight = 0, -- hide command line unless needed
     completeopt = { "menuone", "noselect" }, -- Options for insert mode completion
     copyindent = true, -- Copy the previous indentation on autoindenting
