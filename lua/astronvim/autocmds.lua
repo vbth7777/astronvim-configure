@@ -251,4 +251,3 @@ cmd("AstroVersion", function() require("astronvim.utils.updater").version() end,
 cmd("AstroReload", function() require("astronvim.utils").reload() end, { desc = "Reload AstroNvim (Experimental)" })
 
 
-vim.cmd [[autocmd BufNewFile,BufRead *.hbs set filetype=html]]
