@@ -81,5 +81,9 @@ return {
       --   ["~/%.config/foo/.*"] = "fooscript",
       -- },
     }
+    lspconfig = require("lspconfig")
+    lspconfig.emmet_ls.setup {
+      filetypes = { "html", "css", "scss", "javascript", "javascriptreact", "typescript", "typescriptreact" },
+    }
   end,
 }
