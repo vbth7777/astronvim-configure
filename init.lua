@@ -82,7 +82,7 @@ return {
       -- },
     }
     lspconfig = require("lspconfig")
-    lspconfig.emmet_ls.setup {
+    lspconfig.emmet_language_server.setup {
       filetypes = { "html", "css", "scss", "javascript", "javascriptreact", "typescript", "typescriptreact" },
     }
   end,
