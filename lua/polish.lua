@@ -20,3 +20,4 @@ vim.opt.wrap = false
 vim.g.cmp_nvim_lsp = true
 vim.g.cmp_enabled = true
 -- vim.opt.clipboard = "unnamedplus"
+vim.opt.clipboard = ""
