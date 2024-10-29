@@ -80,29 +80,29 @@ return {
       )
     end,
   },
-  {
-    "zbirenbaum/copilot.lua",
-    cmd = "Copilot",
-    event = "InsertEnter",
-    build = ":Copilot auth",
-    opts = {
-      suggestion = {
-        enabled = true,
-        auto_trigger = true,
-        keymap = {
-          accept = "<M-a>",
-          next = "<M-]>",
-          prev = "<M-[>",
-        },
-      },
-      panel = {
-        enabled = true,
-        auto_refresh = true,
-      },
-    },
-  },
-  {
-    "zbirenbaum/copilot-cmp",
-    config = function() require("copilot_cmp").setup() end,
-  },
+  -- {
+  --   "zbirenbaum/copilot.lua",
+  --   cmd = "Copilot",
+  --   event = "InsertEnter",
+  --   build = ":Copilot auth",
+  --   opts = {
+  --     suggestion = {
+  --       enabled = true,
+  --       auto_trigger = true,
+  --       keymap = {
+  --         accept = "<M-a>",
+  --         next = "<M-]>",
+  --         prev = "<M-[>",
+  --       },
+  --     },
+  --     panel = {
+  --       enabled = true,
+  --       auto_refresh = true,
+  --     },
+  --   },
+  -- },
+  -- {
+  --   "zbirenbaum/copilot-cmp",
+  --   config = function() require("copilot_cmp").setup() end,
+  -- },
 }
