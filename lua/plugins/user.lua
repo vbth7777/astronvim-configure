@@ -105,14 +105,45 @@ return {
   --   "zbirenbaum/copilot-cmp",
   --   config = function() require("copilot_cmp").setup() end,
   -- },
+  -- {
+  --   "supermaven-inc/supermaven-nvim",
+  --   config = function()
+  --     require("supermaven-nvim").setup {
+  --       keymaps = {
+  --         accept_suggestion = "<A-a>",
+  --       },
+  --     }
+  --   end,
+  -- },
+  --
+  --
+  -- if you do not have copilot pro, you should use supermaven instead of copilot.vim
   {
-    "supermaven-inc/supermaven-nvim",
+    "github/copilot.vim",
     config = function()
-      require("supermaven-nvim").setup {
-        keymaps = {
-          accept_suggestion = "<A-a>",
-        },
+      vim.g.copilot_no_tab_map = true
+      vim.api.nvim_set_keymap("i", "<A-a>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
+      vim.g.copilot_filetypes = {
+        ["*"] = true,
+        -- yaml = false,
+        -- markdown = false,
+        help = false,
+        gitcommit = false,
+        gitrebase = false,
+        hgcommit = false,
+        svn = false,
+        cvs = false,
       }
     end,
+  },
+  {
+    "CopilotC-Nvim/CopilotChat.nvim",
+    dependencies = {
+      { "nvim-lua/plenary.nvim", branch = "master" },
+    },
+    build = "make tiktoken",
+    opts = {
+      -- See Configuration section for options
+    },
   },
 }
