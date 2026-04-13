@@ -146,4 +146,9 @@ return {
       -- See Configuration section for options
     },
   },
+  { "nvzone/volt", lazy = true },
+  {
+    "nvzone/minty",
+    cmd = { "Shades", "Huefy" },
+  },
 }
